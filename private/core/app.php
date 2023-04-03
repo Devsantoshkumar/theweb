@@ -9,13 +9,13 @@ class App{
     {
         $URL = $this->getURL();
         array_walk($URL, create_function('&$val','$val = trim($val);'));
-        if(file_exists("private/controllers/".$URL[0].".php"))
+        if(file_exists("../private/controllers/".$URL[0].".php"))
         {
             $this->controller = ucfirst($URL[0]);
             unset($URL[0]);
         }
 
-        require("private/controllers/".$this->controller.".php");
+        require("../private/controllers/".$this->controller.".php");
         $this->controller = new $this->controller();
 
 

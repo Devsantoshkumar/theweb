@@ -17,6 +17,7 @@ class Projects extends Controller{
         $data = $project->findAll();
 
         $this->view('projects',['rows'=>$data,'errors'=>$errors]);
+        
     }
 
 

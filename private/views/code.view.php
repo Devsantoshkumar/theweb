@@ -1,17 +1,18 @@
 <?php $this->view('includes/header'); ?>
 <?php $this->view('includes/navigation'); ?>
 
+
     <div class="container-fluid details_Header">
         <div class="row">
             <div class="col-11 m-auto">
-                <nav aria-label="breadcrumb" class="py-4 px-5">
+            <nav aria-label="breadcrumb" class="py-4 px-5">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item text-white"><a href="#">Home</a></li>
                     <li class="breadcrumb-item text-white"><a href="#">Library</a></li>
                     <li class="breadcrumb-item text-white active" aria-current="page">Data</li>
                 </ol>
-                </nav>
-            </div>
+            </nav>
+        </div>
     </div>
 
     
